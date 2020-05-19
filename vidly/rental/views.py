@@ -22,9 +22,11 @@ def details(request, movie_id):
     except:
         return render(request, 'notfund.html')
 
-# about send your name
 def about(request):
-    return HttpResponse("Pavel Aragon")
+    return render(request, 'about.html')
+
+# about send your name
+
 
 def soon(request):
     return render(request, 'comingSoon.html')
