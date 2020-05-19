@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block content%}
+<h1> Vidly Catalog </h1>
+
+<table class="table table-bordered table-striped">
+    <thead class="thead-dark">
+        <tr>
+            <th>Id</th>
+            <th>Title</th>
+            <th>Year</th>
+            <th>Price</th>
+            <th>Stock</th>
+        </tr>
+    </thead>
+
+    <tbody>
+{% for m in movies %}
+    <tr>
+        <td>{{m.id}}</td>
+        <td>{{m.title}}</td>
+        <td>{{m.release_year}}</td>
+        <td>{{m.price}}</td>
+        <td>{{m.in_stock}}</td>
+    </tr>
+{% endfor %}
+    </tbody>
+</table>
+{% endblock %}

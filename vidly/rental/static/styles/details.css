@@ -1,0 +1,31 @@
+h2{
+    text-align: center;
+}
+
+.image{
+    width: 240px;
+    height: 360px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 15px;
+    margin-bottom: 20px;
+}
+
+.image img{
+    width: 100%;
+    height: 100%;
+}
+
+.details{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.actions{
+    display: inline-block;
+    margin-top: 25px;
+}
+
+.synopsis{
+    margin-top: 20px;
+}

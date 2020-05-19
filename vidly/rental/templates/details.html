@@ -1,0 +1,34 @@
+{% extends 'layout.html' %}
+
+
+{% block content %}
+
+{% block styles%}
+    <link href="/static/styles/details.css" rel="stylesheet">
+{% endblock %}
+
+<h2> {{ movie.title }} </h2>
+
+<div class='image'>
+    <img src='{{ movie.image }}'>
+</div>
+
+<div class='details'>
+    Release Year : {{ movie.release_year }}
+    Price: {{ movie.price }}
+</div>
+
+
+<div class="actions">
+    <button class="btn btn-info">Add to cart</button>
+    <button class="btn btn-danger">Watch on Netflix</button>
+    <button class="btn btn-success">Watch on Hulu</button>
+    <button class="btn btn-dark">Watch on Apple TV</button>
+</div>
+
+<div class="synopsis">
+    <h6>Synopsis</h6>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea nesciunt libero laboriosam error dolorem, fuga facere iusto pariatur, sapiente sed ex quibusdam sit sunt earum vitae saepe magnam quae, quidem provident distinctio illo nam labore.</p>
+</div>
+
+{% endblock %}
